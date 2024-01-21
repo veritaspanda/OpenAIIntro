@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Interactive JavaScript Features</title>
+  <title>Pirate Themed JavaScript Features</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
     }
     .dropdown {
       position: relative;
@@ -17,23 +21,38 @@
       background-color: #f9f9f9;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      padding: 12px;
       z-index: 1;
     }
     .dropdown:hover .dropdown-content {
       display: block;
     }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
   </style>
 </head>
 <body>
-  <h1>Interactive JavaScript Features</h1>
+  <h1>Welcome to the Pirate Themed JavaScript Features Page</h1>
   <div class="dropdown">
-    <button>Click me for dropdown</button>
+    <button class="dropbtn">Dropdown</button>
     <div class="dropdown-content">
-      <p>This is a dropdown content</p>
+      <a href="#">Feature 1</a>
+      <a href="#">Feature 2</a>
+      <a href="#">Feature 3</a>
     </div>
   </div>
-  <br>
-  <button onclick="alert('You clicked the button!')">Click me for alert</button>
+  <div id="featureDisplay">
+    <!-- Feature content will be displayed here -->
+  </div>
+  <script>
+    // JavaScript code for feature interactions
+    // You can use React.js to handle feature interactions
+  </script>
 </body>
 </html>
